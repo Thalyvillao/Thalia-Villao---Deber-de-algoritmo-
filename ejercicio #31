@@ -1,0 +1,17 @@
+//Dado una secuencia determina si es palíndromo
+Algoritmo npalindromo
+		i=1
+		Escribir "Ingrese una palabra:"
+		Leer palabra
+		j=Longitud(palabra)
+		Mientras i < j & Minusculas(Subcadena(palabra, i, i)) = Minusculas(Subcadena(palabra, j, j)) Hacer
+			i=i+1
+			j=j-1
+		FinMientras
+		Escribir ""
+		Si i>=j Entonces
+			Escribir " La palabra ", palabra," es palíndrome."
+		Sino
+			Escribir "La palabra ingresada no es palindrome"
+		FinSi
+FinAlgoritmo
