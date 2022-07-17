@@ -1,0 +1,12 @@
+//Leer dos números y realizar el producto median sumas
+Algoritmo psuma
+	Escribir "Escriba el valor de A"
+	Leer a
+	Escribir "Escribir el valor de B"
+	leer b
+	suma=0
+	Para i Desde 1 Hasta b Hacer
+		suma=suma+a
+	FinPara
+	Escribir "El producto mediante suma es: ", suma
+FinAlgoritmo
