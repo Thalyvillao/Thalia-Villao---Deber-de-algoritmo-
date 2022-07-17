@@ -1,0 +1,19 @@
+//Leer una secuencia de 20 números almacenarlos en un vector 
+//y mostrar la posición donde se encuentra el mayor valor leído.
+Algoritmo vposision
+	ns=20
+	Dimension num[ns]
+	Para i<-1 Hasta ns Hacer
+		Escribir "Ingrese un numero para la posición ",i 
+		Leer num[i]
+	FinPara
+	acu=0
+	pos=0
+	Para i<-1 Hasta ns  Hacer
+		SI num[i]>acu Entonces
+			acu=num[i]
+			pos=i
+		FinSi
+	FinPara
+	Escribir "El numero mayor se encuentra en la posicion: ",pos
+FinAlgoritmo
