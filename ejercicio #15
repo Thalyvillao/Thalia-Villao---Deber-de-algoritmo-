@@ -1,0 +1,25 @@
+//Leer una secuencia se números y mostrar cuales de ellos es el mayor y el menor, el
+//proceso finalizará cuando se introduzca un número impar.
+Algoritmo simpar_mayormenor
+	DEFINIR num,may,men COMO ENTERO
+	i= 0
+	may = 0
+	men = 9999999
+	MIENTRAS i=0 Hacer
+		ESCRIBIR "Introduce un número"
+		LEER num
+		SI num%2=0 ENTONCES
+			SI (num > may) ENTONCES
+				may = num
+			FINSI
+			SI (num < men) ENTONCES
+				men =num
+			FINSI
+		SiNo
+			Escribir "Se ingreso un numero impar, el proceso finaliza AHORA ";Escribir "   "
+			i= 1
+		FinSi
+	FinMientras
+	Escribir "En la secuencia ingresada el numero mayor es: ",may
+	Escribir "En la secuencia ingresada el numero menor es: ",men
+FinAlgoritmo
