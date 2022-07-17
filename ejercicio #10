@@ -1,0 +1,16 @@
+//Leer una secuencia de números y mostrar su producto, el proceso
+// finalizará cuando el usuario pulse a la tecla f 
+Algoritmo productof
+	definir lm Como Caracter
+	definir num Como Real
+	mult=1
+	lm=""
+	mientras lm<> "f" Hacer
+		escribir"ingrese un numero"
+		leer num
+		escribir "si desea terminar presione f sino presione cualquier tecla"
+		leer lm
+		mult=mult*num
+	FinMientras
+	Escribir"el resultado de la multiplicacion es: " mult
+FinAlgoritmo
