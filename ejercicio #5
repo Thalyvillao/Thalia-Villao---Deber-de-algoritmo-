@@ -1,0 +1,11 @@
+Algoritmo tmult
+	Definir nm,tm Como Entero
+	Escribir "Ingrese un numero, tome en consideracion que este numero debe ser entero"
+	leer nm
+	cont=1
+	Mientras cont <= 10 Hacer
+		tm=cont*nm
+		Escribir " ",nm," * ",cont," = ",tm
+		cont=cont+1
+	Fin Mientras
+FinAlgoritmo
