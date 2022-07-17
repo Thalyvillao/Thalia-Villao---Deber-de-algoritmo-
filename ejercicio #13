@@ -1,0 +1,17 @@
+//Generar enteros de 3 en 3 comenzando por 2 hasta el valor máximo menor que 30. 
+//Calculando la suma de los enteros generados que sean divisibles por 5.
+Algoritmo div_5
+	Definir num,lim,suma,div Como Entero
+	num=2
+	lim=30
+	suma=0
+	Escribir "La serie generada es: "
+	Mientras num<=lim Hacer
+		num=num+3
+		Escribir num
+		Si num mod 5=0 Entonces
+			suma=suma+num
+		Fin Si
+	Fin Mientras
+	Escribir "De la serie generadas la suma de los divisores para 5 es: ",suma
+FinAlgoritmo
