@@ -1,0 +1,16 @@
+//12.	Dado un número mostrar su valor en binario
+Algoritmo nbinario
+	Definir num,x,bin Como Real
+	Escribir "Ingrese un numero"
+	leer num
+	c=1
+	Escribir "El numero ",num, " convertido en binario es " 
+	Mientras num >= 1 Hacer
+		si num mod 2 == 1 entonces
+			bin=bin+c
+		FinSi
+		num = trunc(num/2)
+		c=c*10
+	FinMientras
+	Escribir bin
+FinAlgoritmo
