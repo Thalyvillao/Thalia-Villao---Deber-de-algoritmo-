@@ -1,0 +1,19 @@
+//Leer una secuencia de números y determinar el mayor de los pares leídos.
+Algoritmo smayor_par
+		Escribir "Identifica el mayor de los pares"
+		Definir num,nmayor Como Real
+		Definir i Como Entero;
+		Escribir "Ingrese el numero de elementos que tendra la secuencia"
+		Leer ns
+		nmayor=0;
+		Para i<-1 Hasta ns  Hacer
+			Escribir "Ingresa el ", i," numero de la secuencia"
+			Leer num
+			Si num%2=0 Entonces
+				Si nmayor<=num Entonces
+					nmayor=num
+				FinSi
+			FinSi
+		FinPara
+		Escribir "El numero par de mayor valor en la secuencia ingresada es: ",nmayor
+FinAlgoritmo
