@@ -1,0 +1,38 @@
+//Dado dos vectores A y B de 15 elementos cada uno, obtener un vector C donde la
+//posición i se almacene la suma de A[i]+B[i] y mostrar el mayor de los C[i] 
+Algoritmo sum_vectores
+	Definir arrrelo1,arreglo2,sumarreglo,num Como Entero
+	Definir x,z,k,acu Como Entero
+	Dimension arreglo1[15]
+	Dimension arreglo2[15]
+	Dimension sumarreglo[15]
+	acu=0
+	dim=15
+	Escribir "Ingrese los datos para vector A"
+	Para x<-1 Hasta dim Hacer
+		Escribir "Ingrese valor para la posicion ", x," del vector A:"
+		Leer  num
+		arreglo1[x]=num
+	Fin Para
+	
+	Escribir "Ingrese los datos para vector B"
+	Para z<-1 Hasta dim Hacer
+		Escribir "Ingrese valor para la posicion ", Z," del vector B:"
+		Leer  num
+		arreglo2[z]=num
+	Fin Para
+	
+	Escribir "Suma de vectores A + B"
+	Para k<-1 Hasta dim Hacer
+		sumarreglo[k]=arreglo1[k]+arreglo2[k]
+		Escribir "La suma para la posicion ", k," del vector C es: ", sumarreglo[k]
+	Fin Para
+	mayo=sumarreglo[1]
+	Para k<-1 Hasta dim Hacer
+		Si sumarreglo[k] > mayo Entonces
+			mayo=sumarreglo[k]
+		SiNo
+		Fin Si
+	Fin Para
+	Escribir "El numero mayor del vector C es ",mayo
+FinAlgoritmo
