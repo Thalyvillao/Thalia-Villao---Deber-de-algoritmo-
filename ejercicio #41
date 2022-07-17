@@ -1,0 +1,22 @@
+//Dado un párrafo leído por el teclado determine cuantas palabras contiene.
+Algoritmo cpalabras
+	Escribir "Ingresa una frase"
+    Leer frase
+	frase=frase + ' '
+	tamaño=longitud(frase)
+	p=1
+	cantidad=0
+	Dimensión vector[10000]
+	Para i <- 1 Hasta tamaño Hacer
+		Si ( Subcadena(frase, i, i) = ' ' ) entonces
+			palabra <- subcadena(frase, p , i - 1 )
+			cantidad <- cantidad + 1
+			p=i+1
+			vector[cantidad] <- palabra
+		FinSi
+	FinPara
+	Para j <- 1 hasta cantidad Con Paso 1 Hacer
+		Escribir" ", j " palabra es: -> " vector[j]
+	FinPara
+	Escribir "La cantidad de palabras que forma la frase es : " cantidad
+FinAlgoritmo
