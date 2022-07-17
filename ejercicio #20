@@ -1,0 +1,22 @@
+//Leer una secuencia de 30 números y mostrar la suma de los primos
+Algoritmo sprimos
+	cantidad=3 
+	Dimension num[cantidad]
+	Para i<-1 Hasta cantidad  Hacer
+		Escribir "Ingrese un numero para la posición ",i 
+		Leer num[i]
+	FinPara
+	suma=0
+	Para i<-1 hasta cantidad Hacer
+		cont=0
+		Para j<-1 Hasta num[i] Hacer
+			si num[i]%j = 0 Entonces
+				cont=cont+1
+			FinSi
+		FinPara
+		Si cont = 2 Entonces
+			suma=suma + num[i]
+		FinSi
+	FinPara
+	Escribir "La suma de los numeros primos es: ",suma;
+FinAlgoritmo
