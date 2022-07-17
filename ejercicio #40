@@ -1,0 +1,26 @@
+//Realiza un algoritmo que lea un conjunto de secuencias
+// y determine dada una leída si se encuentra en ese conjunto
+Algoritmo nleido
+	Dimension a[5]
+	i=0
+	Escribir "Ingrese el numero de frases a leer"
+	Leer ns
+	Para i<-1 hasta ns Hacer	
+		Escribir "Introduzca la frase numero: ",i
+		Leer a[i]
+	FinPara
+	Escribir ""
+	Escribir "Escriba la frase a buscar:"
+	Leer frase
+	fexiste=0
+	Para i<-1 hasta ns Hacer	
+		SI a[i] = frase Entonces
+			fexiste=i
+		FinSi
+	FinPara
+	SI fexiste <> 0 Entonces
+		Escribir "La frase ",frase," se encontro en la posicion: ",fexiste
+	SiNo
+		Escribir "La frase no se encontro"
+	FinSi
+FinAlgoritmo
