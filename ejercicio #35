@@ -1,0 +1,30 @@
+//Leer una secuencia de 20 números almacenarlos en un vector A[1..20] 
+//y mostrar la suma de los elementos que ocupan posiciones pares y el mayor de los que ocupan posiciones impares
+Algoritmo smayor_par
+		Definir num,nmayor Como Real
+		Definir i  Como Entero
+		Escribir "Ingrese el numero de elementos que tendra la secuencia"
+		Leer ns
+		Dimension vector[20]
+		nmayor=0
+		nmenor=0
+		Para i<-1 hasta lim Hacer
+			Escribir "Introduzca un numero para el vector A en la posicion ", i
+			Leer vector[i]
+		FinPara
+		Para i<-1 Hasta ns  Hacer
+			Escribir "Ingresa el ", i," numero de la secuencia"
+			Leer num
+			Si i%2=0 Entonces
+				sum=num+sum
+				Escribir "sum",sum
+			FinSi
+			Si i%2=1 Entonces
+					Si num<nmenor Entonces
+						nmenor=num
+					FinSi
+			FinSi
+		FinPara
+		Escribir "El multipo de 5 de mayor valor en la secuencia ingresada es: ",nmayor
+		Escribir "El multiplo de 3 de menor valor en la secuencia ingresada es: ",nmenor
+FinAlgoritmo
