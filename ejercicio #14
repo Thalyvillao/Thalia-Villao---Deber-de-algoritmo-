@@ -1,0 +1,16 @@
+//Calcular la media de una secuencia de números, el proceso finalizará cuando 
+Algoritmo msnumeros
+	definir num,m,ns,med Como Real
+	cont=1
+	Escribir "Escriba un numero para la secuencia"
+	leer ns
+	Escribir " "
+	Mientras cont<=ns Hacer
+		escribir"Ingrese un numero"
+		Leer num
+		m=m+num
+		med=m/ns
+		cont=cont+1
+	Fin Mientras
+	Escribir "La media de los numeros es:",med
+FinAlgoritmo
