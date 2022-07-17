@@ -1,0 +1,17 @@
+//Leer dos números y realizar la división mediante restas mostrando el cociente y el resto
+Algoritmo dcociente
+	Definir  cosiente,resto,restas,suc Como Real
+	Repetir
+		Escribir "Ingrese un numero A"
+		leer a
+		Escribir "Ingrese un numero B"
+		leer b
+		Hasta Que a>0 & a=trunc(a) &  b>0 & b=trunc(b)
+		c=0
+		Mientras a>=b Hacer
+			a=a-b
+			c=c+1
+		FinMientras
+		Escribir "El cociente es  ", c
+		Escribir "El resto es ", a
+FinAlgoritmo
