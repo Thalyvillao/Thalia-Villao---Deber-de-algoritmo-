@@ -1,0 +1,11 @@
+Algoritmo Nmult
+	Definir num,num2,x, producto Como Entero
+	Escribir "Ingrese dos numero"
+	leer num,num2
+	x=0
+	producto=0
+		Para x=1 Hasta 1 Con Paso 1 Hacer
+			producto = num * num2
+		Fin Para
+		Escribir " El producto de los dos numeros es: ", producto
+FinAlgoritmo
