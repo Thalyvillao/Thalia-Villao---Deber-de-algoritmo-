@@ -1,0 +1,21 @@
+//Lee una secuencia de números y determina cual es el mayor de ellos.
+Algoritmo smayor
+	definir num,m,cont,ns Como Entero
+	Escribir "Ingrese el numero de la secuencia"
+	leer ns
+	cont=1
+	m=1
+	Mientras cont<=ns Hacer
+		Escribir "Ingrese secuencia de numeros"
+		leer num
+		Si cont=1 Entonces
+			m=num
+		SiNo
+			Si num>m Entonces
+				m=num
+			Fin Si
+		Fin Si
+		cont=cont+1
+	Fin Mientras
+	Escribir "El numero mayor es: ",m
+FinAlgoritmo
