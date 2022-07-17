@@ -1,0 +1,11 @@
+//Leer un número y determinar su factorial
+Algoritmo nfactorial
+	definir fac, num Como Entero
+	Escribir  " ingrese numero"
+	leer num
+	fac= 1
+	Para i= 1 hasta num
+		fac = fac * i
+	FinPara
+	Escribir "El numero factorial de ",num," es: ",fac
+FinAlgoritmo
