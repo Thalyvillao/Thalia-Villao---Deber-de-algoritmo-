@@ -1,0 +1,27 @@
+//Leer una secuencia de 20 números y almacenar en un vector sus factoriales.
+Algoritmo ffactorial
+	Definir arrrelo1 Como Entero
+	Dimension arreglo1[15]
+	definir num,contador Como Entero
+	Definir funcionf Como Real
+	Escribir "Ingrese la secuencia"
+	Leer  n
+	Para n<-1 Hasta n  Hacer
+		Escribir "Ingrese los numeros de la secuencia"
+		leer num
+		Si num > 0 Entonces
+			contador=1
+			funcionf=1
+			Mientras contador <= num Hacer
+				funcionf=funcionf*contador
+				contador=contador+1
+				arreglo1[n]=funcionf
+			Fin Mientras
+		SiNo
+			Escribir "El numero ingresado no es calculable"
+		Fin Si
+	Fin Para
+	Para n<-1 Hasta n-1 Hacer
+		Escribir "Los numeros factoriales son: ",arreglo1[n]
+	Fin Para
+FinAlgoritmo
