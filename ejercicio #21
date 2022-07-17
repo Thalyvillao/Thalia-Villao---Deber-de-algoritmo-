@@ -1,0 +1,25 @@
+//Leer una secuencio de 30 números y mostrar la suma de su factorial
+Algoritmo ffactorial
+	definir num,cont, lim Como Entero
+	Definir funcionf Como Real
+	lim=3
+	Para i<-1 Hasta lim  Hacer
+		ac=0
+		Escribir "Ingrese un numero para la posición ",i 
+		Leer num
+		Si num > 0 Entonces
+			cont=1
+			funcionf=1
+			Mientras cont <= num Hacer
+				funcionf=funcionf*cont
+				cont=cont+1
+			Fin Mientras
+			//Escribir "La funcion factorial del numero ingresado"," ",n," ","es: ",funcionf
+		SiNo
+			Escribir "El numero ingresado no es calculable"
+		Fin Si
+		acu=acu+funcionf
+	FinPara
+	Escribir " "
+	Escribir "La suma de los factoriales de los numeros ingresados es: ", acu
+FinAlgoritmo
