@@ -1,0 +1,17 @@
+//Leer una secuencia de números y sumar solo los pares mostrando el resultado del proceso
+Algoritmo spar
+	definir num,cont,suma,ns Como Entero
+	Escribir "Ingrese la secuencia"
+	leer ns
+	cont=1
+	Mientras cont <= ns Hacer
+		Escribir "Ingrese los numeros "
+		leer num
+		Si num %2=0 Entonces
+			suma=suma+num ; cont=cont+1
+		SiNo
+			cont=cont+1
+		Fin Si
+	Fin Mientras
+	Escribir "la suma de los numeros pares es:",suma
+FinAlgoritmo
