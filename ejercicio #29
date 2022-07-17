@@ -1,0 +1,26 @@
+//29.	Dado una secuencia de número leídos y almacenados en un vector A 
+//y un número leído determinar si dicho número se encuentra o no en el vector
+Algoritmo v_secuencia
+	encontrado=0
+	j=1
+	Escribir "Ingrese el numero de elementos que tendra la secuencia"
+	Leer ns
+	Dimension vector[ns]
+	Para i<-1 hasta ns Hacer
+		Escribir "Introduzca un numero para el vector A en la posicion ",i
+		Leer vector[i]
+	FinPara
+	Escribir "Ingrese el número que desea buscar"
+	Leer num
+	Mientras encontrado=0 & j<=ns hacer
+		Si vector[j]=num Entonces	
+			encontrado=j
+		FinSi
+		j=j+1
+	FinMientras
+	Si encontrado<>0 Entonces
+		Escribir "Se ha encontrado el valor ",num," en la posicion ",encontrado
+	Sino
+		Escribir "No se ha encontrado el valor ",num," en el vector"
+	FinSi
+FinAlgoritmo
