@@ -1,0 +1,29 @@
+//Leer una secuencia de números
+// y mostrar el mayor de los múltiplos de 5 leídos y el menor de los múltiplos de 3 le
+Algoritmo smayor_par
+		Definir num,nmayor Como Real
+		Definir i Como Entero;
+		Escribir "Ingrese el numero de elementos que tendra la secuencia"
+		Leer ns
+		nmayor=0
+		nmenor=0
+		Para i<-1 Hasta ns  Hacer
+			Escribir "Ingresa el ", i," numero de la secuencia"
+			Leer num
+			Si num%5=0 Entonces
+				Si num>nmayor Entonces
+					nmayor=num
+				FinSi
+			FinSi
+			Si num%3=0 Entonces
+				Si nmenor=0 Entonces
+					nmenor=num
+				FinSi
+					Si num<nmenor Entonces
+						nmenor=num
+					FinSi
+			FinSi
+		FinPara
+		Escribir "El multipo de 5 de mayor valor en la secuencia ingresada es: ",nmayor
+		Escribir "El multiplo de 3 de menor valor en la secuencia ingresada es: ",nmenor
+FinAlgoritmo
