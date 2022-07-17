@@ -1,0 +1,20 @@
+//Dado una secuencia de número leídos y almacenados en un vect0r A mostrar 
+//dichos numeros en orden
+Algoritmo norden
+	Definir arrrelo1 Como Entero
+	Dimension arreglo1[15]
+	Escribir "Ingrese la secuencia"
+	leer ns
+		
+	Para n<-1 Hasta ns Hacer
+		Escribir "Ingrese valor para la posicion ", n," del vector A:"
+		Leer  num
+		arreglo1[n]=num
+	Fin Para
+	Escribir " "
+	Escribir " "
+	Escribir "El orden de ingreso es fue el siguiente:"
+	Para n<-1 Hasta ns Hacer
+		Escribir "El ", n, " numero ingresado fue ", arreglo1[n]
+	Fin Para
+FinAlgoritmo
