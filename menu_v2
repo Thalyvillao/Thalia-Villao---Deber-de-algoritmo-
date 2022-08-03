@@ -629,9 +629,9 @@ Algoritmo Menu
 							escribir "ingrese un numero";leer num1
 							escribir"ingrese un numero";leer num2
 							calculadora("+",num1,num2)
-							Escribir "espere por favor ,regresando al Menu ..."
-							Borrar Pantalla
+							Escribir "espere por favor ,regresando al Menu ... 
 							Esperar 3 Segundos
+Borrar pantalla
 						"2":// dado 2 numeros si el primero es  >= al segundo sumarlo sino restarlo
 							escribir "sumar o restar"
 							escribir "ingrese un numero1"
